@@ -57,7 +57,17 @@
             border-radius: 5px;
             border: 1px solid black;
         }
+        .copyright{
+            width:100%;
+            height:30px;
+            color:white;
+            background-color: rgb(27, 27, 27);
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-611d012fae33ca73"></script>
+</head>
 
 <body>
     <center>
@@ -75,10 +85,24 @@
                 <hr class="card-text">
                 <label for="file-upload" class="upload">업로드</label>
                 <a href="" class="download" id="download" onclick="test()">다운로드</a>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox" style="margin-top: 10px;"></div>
                 </hr>
             </div>
         </div>
     </center>
+    <div id="disqus_thread" style="width:80%; margin-left:10%;"></div>
+    <script>
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://image-to-cartoon.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    
+    <div class="copyright">Copyright 2021. zeon all rights reserved</div>
     <script>
         function test() {
             var tmp = document.getElementById("image").src;
@@ -293,6 +317,7 @@
             }
         }
     </script>
+    <script id="dsq-count-scr" src="//image-to-cartoon.disqus.com/count.js" async></script>
 </body>
 
 </html>
